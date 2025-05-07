@@ -80,6 +80,7 @@
                 <data android:mimeType="video/*" />
                 <data android:mimeType="audio/*" />
                 <data android:mimeType="application/vnd.apple.mpegurl" />
+                <data android:mimeType="application/dash+xml" />
             </intent-filter>
             <intent-filter> <!-- HTTP(S) with extension (e.g. Chrome) -->
                 <action android:name="android.intent.action.VIEW" />
@@ -171,6 +172,15 @@
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.m3u8*" />
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.m3u8*" />
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.m3u8*" />
+                
+                <data android:pathPattern=".*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\..*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.mpd" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.mpd" />
+                
             </intent-filter>
             <intent-filter android:label="@string/label_share_intent"> <!-- Share action -->
                 <action android:name="android.intent.action.SEND" />
